@@ -1,0 +1,49 @@
+/* selector for id="container" */
+#container {
+    margin: 50px auto;
+    width: 500px;
+    padding: 10px;
+}
+
+/*  selector for all "h1" elements
+    that are a descendent of id="container"
+    and have a class of "fancy-header" */
+h1 {
+    color: ghostwhite;
+    text-decoration: underline;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    color: purple;
+    text-decoration: underline;
+}
+
+body {
+    background-color: aliceblue;
+    background-image: url(https://images.pexels.com/photos/40976/beach-beautiful-blue-coast-40976.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+    background-image-width;
+    2em 3 em;
+    font-family: Chalkboard, sans-serif;
+}
+
+ul li{
+    list-style: katakana;
+}
+
+
+table {
+    padding: 18px;
+    font-size: x-small;
+}
+
+td {
+    padding: 10px;
+}
+
+a:hover {
+    color: chartreuse;
+}
+
+/* command + lash to add comments*/
