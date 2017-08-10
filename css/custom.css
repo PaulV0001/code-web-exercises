@@ -1,4 +1,6 @@
-.jumbotron {
+.hero-pizza-title {
+    background-color: white;
+    opacity: .7;
 
 }
 
@@ -16,19 +18,3 @@ h1 {
 }
 
 
-.btn-default {
-    background-color: #2e6da4;
-}
-
-.crust {
-    background-color: #D9EDF7;
-}
-
-.panel-body {
-    background-color: #D9EDF7;
-
-}
-
-.panel-body.form-control {
-    background-color: #FFF;
-}
