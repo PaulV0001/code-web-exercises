@@ -27,7 +27,7 @@ switch (color) {
     case "yellow":
         console.log('Bananas are yellow');
         break;
-    case "oreen":
+    case "green":
         console.log('Grass is green');
         break;
     case "blue":
@@ -35,6 +35,5 @@ switch (color) {
         break;
     default:
         console.log(color + ' I do not know anything by that color');
-        break;
 
 }

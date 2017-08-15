@@ -19,20 +19,22 @@ var favorite = 'violet'; // TODO: change this to your favorite color from the li
 // TODO: Using the ternary operator, conditionally log a statement that
 //       says whether the random color matches your favorite color.
 
+console.log(color);
+
 if (color === "red") {
-    console.log("Red is the color of an apple.")
+    console.log("Red is the color of an apple.");
 } else if (color === "orange") {
-    console.log("Orange is the color of a fruit.")
+    console.log("Orange is the color of a fruit.");
 } else if (color === "yellow") {
-    console.log("Yellow is the color of a banana.")
+    console.log("Yellow is the color of a banana.");
 } else if (color === "green") {
-    console.log("Green is the color of grass.")
+    console.log("Green is the color of grass.");
 } else if (color === "blue") {
-    console.log("Blue is the color of the sky.")
+    console.log("Blue is the color of the sky.");
 } else if (color === "violet") {
-    console.log( color + " That is my favorite color!")
+    console.log( color + " That is my favorite color!");
 } else {
-    console.log(color + " I do not know anything by that color.")
+    console.log(" I do not know anything by that color.");
 }
 
-var favoriteColor = (color === favorite) ? console.log(color + " is my favorite") : console.log(color + " is not");
+var msg = (color === favorite) ? "is my favorite" : "is not";
