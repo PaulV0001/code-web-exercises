@@ -3,4 +3,7 @@
 
 prompt('What is your favorite color?');
 
-alert('Great, purple is my favorite color too!');
+
+var usersFavoriteColor = prompt('What is your favorite color?');
+
+alert('Awesome' + usersFavoriteColor + 'is my favorite color too!')
