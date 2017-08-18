@@ -8,14 +8,23 @@
  * Example
  *  > sayHello("codeup") // returns "Hello, codeup!"
  */
+var name = "Paul"; // Global
 
-function sayHello(name) {
-    console.log("Hello,");
+function sayHello(name) { // Local
+    var greet = "Hello";
+    name = "Valdez";
+    return greet + ", " + name + "!";
 
 }
 
+console.log(sayHello(name));
+console.log(name);
 
-    sayHello("name");
+// block -> function body -> process
+// functionName( type parameters...) : returnType
+// sayHello(string name): string
+
+
 
 /**
  * TODO:
@@ -31,6 +40,18 @@ function sayHello(name) {
 // 100 and stores it in a variable named random
 var random = Math.floor((Math.random() * 100) + 1);
 
+var helloMessage = sayHello("Paul");
+
+function sayHello() {
+    console.log(helloMessage);
+
+}
+
+    sayHello();
+
+
+
+
 /**
  * TODO:
  * Create a function called 'isOdd' that takes a number as a parameter.
@@ -44,6 +65,16 @@ var random = Math.floor((Math.random() * 100) + 1);
  * Call the function 'isOdd' passing the variable 'random' as a parameter.
  * console.log *outside of the function* to check your work
  */
+var number = 13;
+var message;
+function isOdd(random) {
+    message = (random % 2 === 1) ? random + " Is an odd number." : random + " Is not an odd number.";
+    
+}
+
+    isOdd(random);
+    console.log(message);
+
 
 /**
  * TODO: Create a function named 'calculateTip' to calculate a tip on a bill at a
@@ -56,8 +87,28 @@ var random = Math.floor((Math.random() * 100) + 1);
  *  > calculateTip(0.20, 20) // returns 4
  */
 
+
+function calculateTip(percentage, total) {
+    var tip = (percentage / 100) * total;
+    return tip;
+
+
+}
+
+console.log(calculateTip(18, 100));
+
+
 /**
  * TODO: use prompt and alert in combination with your calculateTip function to
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
+
+function askForCheck() {
+    var total = prompt("Give me the total");
+    var percentage = prompt("Givem e the tip %");
+    var tip = calculateTip(percentage, total);
+    console.log("Your tip is: " + tip);
+    
+}
+
