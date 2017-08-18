@@ -15,4 +15,20 @@
     // TODO: Create a log statement that will log the number of elements in the names array.
 
     // TODO: Create log statements that will print each of the names array elements individually.
+
+    var numbers = [1, 2, 3, 4];
+
+    for (var i = 0; i < names. length; i++) {
+        console.log(names[i]);
+    }
+
+    names.forEach(function (element) {
+        console.log(element);
+
+        // numbers[i] = numbers[i] + 2;
+
+    });
+
+
 })();
+
