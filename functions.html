@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    var firstName = "Paul";
+    var lastName = "Valdez";
+    var age = 17;
+
+    function showInfo(age, city) {
+
+        console.log(firstName + " " + lastName);
+
+        if (age != 0) {
+            console.log("Age: " + age);
+        }
+
+        if (city != "" && city != undefined) {
+            console.log("City: " + city);
+        }
+
+    }
+
+    var sum = function (a, b) {
+        return a + b;
+
+    }
+
+    showInfo(27);
+
+    var res = sum(1, 2);
+
+    console.log(res);
+
+    function innerScope() {
+        var phone = "210-555-5555";
+
+
+    }
+
+    function getAddress() {
+        var address = "Austin hwy";
+        return address;
+
+    }
+
+    innerScope();
+
+
+    console.log(getAddress());
+
+
+
+
+</script>
+
+</body>
+</html>
