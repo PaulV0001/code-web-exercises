@@ -25,7 +25,7 @@
 
         var mapOptions = {
             // Set the zoom level
-            zoom: 15,
+            zoom: 10,
             center: urbanBricks,
 
         };
@@ -36,6 +36,7 @@
             position: codeup,
             map: map
         });
+        marker.setIcon('http://maps.google.com/mapfiles/ms/icons/purple-dot.png');
 
         var marker = new google.maps.Marker({
             position: urbanBricks,
@@ -45,6 +46,7 @@
         // Create a new infoWindow object with content
         var infowindow = new google.maps.InfoWindow({
             content: "Urban Bricks"
+
         });
 
 // Open the window using our map and marker
