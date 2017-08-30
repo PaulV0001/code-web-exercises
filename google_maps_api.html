@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maps</title>
+    <link rel="stylesheet" href="google_maps_api.css">
+
+</head>
+<body>
+<!-- div to hold map -->
+<div id="map"></div>
+
+<!-- Load the Google Maps API [DON'T FORGET TO USE A KEY] -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaPhAzT-k0hXPcPmxhZHp8C3lpNxiYjD8"></script>
+
+<!-- Script to show address on map -->
+<script type="text/javascript">
+    (function() {
+        "use strict";
+
+        // Set our map options
+        var codeup = { lat: 29.426791, lng: -98.489602 };
+
+        var urbanBricks = {lat: 29.609336, lng: -98.597070};
+
+        var mapOptions = {
+            // Set the zoom level
+            zoom: 15,
+            center: urbanBricks,
+
+        };
+
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: codeup,
+            map: map
+        });
+
+        var marker = new google.maps.Marker({
+            position: urbanBricks,
+            map: map
+        });
+
+        // Create a new infoWindow object with content
+        var infowindow = new google.maps.InfoWindow({
+            content: "Urban Bricks"
+        });
+
+// Open the window using our map and marker
+        infowindow.open(map, marker);
+//        // Render the map
+
+
+// Include code from previous example
+
+//// Set our address to geocode
+//        var address = "300 Alamo Plaza, San Antonio, TX, 78205";
+//
+//// Init geocoder object
+//        var geocoder = new google.maps.Geocoder();
+//
+//// Geocode our address
+//        geocoder.geocode({ "address": address }, function(results, status) {
+//
+//            // Check for a successful result
+//            if (status == google.maps.GeocoderStatus.OK) {
+//
+//                // Recenter the map over the address
+//                map.setCenter(results[0].geometry.location);
+//            } else {
+//
+//                // Show an error message with the status if our request fails
+//                alert("Geocoding was not successful - STATUS: " + status);
+//            }
+//
+//
+//        });
+
+    })();
+</script>
+</body>
+</html>
