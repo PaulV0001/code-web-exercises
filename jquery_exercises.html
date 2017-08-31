@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery</title>
+
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<h1 id="codeup">Hello Codeup</h1>
+
+<p class="paragraph">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, architecto blanditiis consequatur consequuntur,
+    culpa distinctio dolorum eius eveniet in iste, natus porro praesentium quae quaerat quasi repellat saepe sit
+    soluta?
+</p>
+
+
+<p class="paragraph">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ea est eum expedita id nulla possimus saepe ut. A alias ducimus, explicabo iste molestias omnis pariatur quis sed sequi voluptatum?
+</p>
+
+<ul>
+    <li class="list-item">One</li>
+    <li class="list-item">Two</li>
+    <li class="list-item">Three</li>
+</ul>
+
+
+<script>
+
+    (function () {
+        $("#codeup").click(function () {
+            $(this).css("background-color", "blue");
+
+        });
+
+        $(".paragraph").dblclick(function () {
+            $(this).css("font-size", "18px");
+
+        });
+
+        $(".list-item").hover(function(){
+            $(this).css("color", "red");
+        }, function(){
+            $(this).css("color", "black");
+        });
+
+    })();
+
+
+</script>
+
+</body>
+</html>
