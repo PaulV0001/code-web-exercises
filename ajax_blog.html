@@ -7,12 +7,7 @@
 <body>
 
 <div id="posts">
-    <ul>
-        <li>title</li>
-        <li>content</li>
-        <li>categories</li>
-        <li>date</li>
-    </ul>
+
 </div>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -32,10 +27,10 @@
 
             blog.forEach(function (blog) {
                 list += "<ul>";
-                list += "<li>" + blog.title + "</li>";
-                list += "<li>" + blog.content + "</li>";
+                list += "<h1>" + blog.title + "</h1>";
+                list += "<p>" + blog.content + "</p>";
                 list += "<li>" + blog.categories + "</li>";
-                list += "<li>" + blog.date + "</li>";
+                list += "<p>" + blog.date + "</p>";
                 list += "</ul>";
             });
 
