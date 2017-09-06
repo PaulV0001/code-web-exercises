@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    "use strict";
+
+    (function () {
+
+    var request = $.ajax("folder/file-name");
+    request.done(onSuccess);
+    request.fail(onFailure);
+
+    function onSuccess(response, status, jqXhr) {
+        console.log(response, status, jqXhr);
+        $("#data").html("<strong>" + response + "</strong>");
+
+    }
+
+        function onFailure(jqXhr, status, error) {
+            console.log(jqXhr, status, error);
+
+        }
+
+
+    })();
+
+</script>
+</body>
+</html>
